@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*--------------------- HEADER STYLING  ------------------ */
+.title {
+    height: 28vh;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    color: white;
+}
+
+.nav-bar {
+    background-color: #a80154;
+    height: 15vh;
+    color: white;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-size: larger;
+}
+
+.nav-bar ul li:hover a {
+    color: aqua;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------BUILDING IMAGE STYLING-------- */
+.building-image {
+    height: 280px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+/* -----------INFORMATION SECTION STYLING------- */
+
+.info {
+    display: flex;
+    padding: 40px 10% 20px 10%;
+
+}
+
+.section-container {
+    display: flex;
+    gap: 20px
+}
+
+h2 {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+h3 {
+    color: grey;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.info-1 {
+    width: 30%;
+}
+
+.info-1 p,
+.bottom-section .div-1 p {
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.info-1 hr {
+    margin-top: 10px;
+    color: #f5f5f5;
+}
+
+.info-2 {
+    width: 70%;
+}
+
+.info-2 p {
+    padding-top: 20px;
+    line-height: 2.3rem;
+}
+
+/* ---------------PEOPLE SECTION STYLING----------- */
+.people {
+    display: flex;
+    gap: 50px;
+    background-color: #a80154;
+    padding: 5%;
+    color: white;
+}
+
+.person img {
+    height: 170px;
+    width: 270px;
+}
+
+.person img,
+.person h4 {
+    padding: 10px;
+}
+
+.person p {
+    text-align: center;
+    padding: 0 50px 0 40px;
+}
+
+/* ---------bottom section styling -----------*/
+
+.bottom-section {
+    display: flex;
+    gap: 40px;
+    padding: 5% 10% 5% 10%;
+    background-color: #1e1a1b;
+    color: white;
+}
+
+.bottom-section h4 {
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.contact {
+    padding: 0 80px 0 1px;
+}
+
+.contact p,
+.icons {
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.icons i {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+/* ---------footer -----------*/
+
+footer {
+    background-color: #a80154;
+    padding: 5% 0;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.info-1 p,
+.div-1 p {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .people,
+    .info,
+    .section-container,
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .info-1 {
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        gap: 10px;
+
+    }
+}
